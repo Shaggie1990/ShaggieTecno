@@ -57,6 +57,6 @@ export const styles = StyleSheet.create({
     },
     productPrice: {
         fontSize: 15,
-        fontWeight: 'bold',
+        fontFamily: "ClearSans-Bold",
     },
 });
