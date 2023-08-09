@@ -22,9 +22,9 @@ export const styles = StyleSheet.create({
     categoryName: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: COLORS.white,
+        color: COLORS.text,
         padding: 20,
-        textShadowColor: 'rgba(0,0, 0, 0.75)',
+        textShadowColor: 'rgba(0,0, 0, 0.30)',
         textShadowOffset: { width: -1, height: 1 },
         textShadowRadius: 6,
     },
