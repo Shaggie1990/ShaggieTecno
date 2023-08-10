@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { COLORS } from '../../themes';
+import { COLORS, FONTS } from '../../themes';
 
 export const styles = StyleSheet.create({
     container: {
@@ -57,6 +57,6 @@ export const styles = StyleSheet.create({
     },
     productPrice: {
         fontSize: 15,
-        fontFamily: "ClearSans-Bold",
+        fontFamily: FONTS.medium,
     },
 });
