@@ -2,7 +2,8 @@ import { useFonts } from 'expo-font';
 import { SafeAreaView, StyleSheet, View, ActivityIndicator } from 'react-native';
 
 import RootNavigator from './navigations';
-import { FONTS, COLORS } from './themes';
+import { COLORS, FONTS } from './themes';
+
 
 // const categoryDefault = {
 //   categoryId: null,
@@ -10,10 +11,10 @@ import { FONTS, COLORS } from './themes';
 // };
 export default function App() {
   const [loaded] = useFonts({
-    [FONTS.regular]: require('../assets/fonts/ClearSans-Regular.ttf'),
-    [FONTS.bold]: require('../assets/fonts/ClearSans-Bold.ttf'),
-    [FONTS.medium]: require('../assets/fonts/ClearSans-Medium.ttf'),
-    [FONTS.light]: require('../assets/fonts/ClearSans-Light.ttf'),
+    [FONTS.regular]: require('../assets/fonts/ChakraPetch-Regular.ttf'),
+    [FONTS.bold]: require('../assets/fonts/ChakraPetch-Bold.ttf'),
+    [FONTS.medium]: require('../assets/fonts/ChakraPetch-Medium.ttf'),
+    [FONTS.light]: require('../assets/fonts/ChakraPetch-Light.ttf'),
   });
  // const [isCategorySelected, setIsCategorySelected] = useState(false);
   // const [selectedCategory, setSelectedCategory] = useState(categoryDefault);

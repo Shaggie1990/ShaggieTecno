@@ -1,6 +1,6 @@
 export const FONTS = {
-    regular: 'ClearSans-Regular.ttf',
-    bold: 'ClearSans-Bold.ttf',
-    medium: 'ClearSans-Medium.ttf',
-    light: 'ClearSans-Light.ttf',
-  };
+  regular: 'ChakraPetch-Regular.ttf',
+  bold: 'ChakraPetch-Bold.ttf',
+  medium: 'ChakraPetch-Medium.ttf',
+  light: 'ChakraPetch-Light.ttf',
+};
