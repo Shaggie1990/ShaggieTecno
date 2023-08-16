@@ -1,8 +1,10 @@
 import { useFonts } from 'expo-font';
 import { SafeAreaView, StyleSheet, View, ActivityIndicator } from 'react-native';
+import { Provider } from 'react-redux';
 
 import RootNavigator from './navigations';
-import { COLORS, FONTS } from './themes';
+import { store } from './store';
+import { FONTS, COLORS } from './themes';
 
 
 // const categoryDefault = {
@@ -16,7 +18,7 @@ export default function App() {
     [FONTS.medium]: require('../assets/fonts/ChakraPetch-Medium.ttf'),
     [FONTS.light]: require('../assets/fonts/ChakraPetch-Light.ttf'),
   });
- // const [isCategorySelected, setIsCategorySelected] = useState(false);
+  // const [isCategorySelected, setIsCategorySelected] = useState(false);
   // const [selectedCategory, setSelectedCategory] = useState(categoryDefault);
 
   // const headerTitle = isCategorySelected ? 'Products' : 'Categories';
@@ -39,9 +41,11 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <RootNavigator />
-    </SafeAreaView>
+    <Provider store={store}>
+      <SafeAreaView style={styles.container}>
+        <RootNavigator />
+      </SafeAreaView>
+    </Provider>
   );
 }
 
